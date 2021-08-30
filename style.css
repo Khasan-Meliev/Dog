@@ -1,0 +1,113 @@
+#dog{
+    background-color: #fad06c;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border-radius: 10px 10px 10px 100px;
+        }
+        #body{
+    background-color: #fad06c;
+    width: 150px;
+    height: 70px;
+    position:relative;
+    top: 35px;
+    left: 70px;
+    border-radius: 10px 10px 10px 55px;
+        }
+        #leg1, #leg2, #leg3, #leg4 {
+    background-color: #fad06c;
+    width: 15px;
+    height: 45px;
+    position: relative;
+  }
+  #leg1 {
+    left: 100px;
+    top: 28px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #leg2 {
+    left: 125px;
+    bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #ffb838;
+    z-index: -1;
+  }
+  #leg3 {
+    left: 173px;
+    bottom: 62;
+    background-color: #ffb838;
+    z-index: -1;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #leg4 {
+    left: 205px;
+    height: 55px;
+    bottom: 114px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #tail {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-left: 9px solid transparent;
+    border-bottom: 100px solid #fad06c;
+    position: relative;
+    bottom: 320px;
+    left: 210px;
+    transform: rotate(28deg);
+    transform-origin: bottom;
+    border-radius: 7px;
+    animation: animate 0.3s infinite;
+  }
+  @keyframes animate {
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  #ear {
+    background-color: #000;
+    position: relative;
+    width: 32px;
+    height: 70px;
+    border-radius: 15px 15px 100px 100px;
+    left: 68px;
+    bottom: 360;
+  }
+  #eye{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    position: relative;
+    left: 50px;
+    bottom: 420px;
+  }
+  #nose{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    position: relative;
+    left: 0px;
+    bottom: 440px
+  }
+  #tongue{
+    background-color: tomato;
+    height: 20px;
+    width: 8px;
+    border-radius: 10px;
+    position: relative;
+    left: 7px;
+    bottom: 425;
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: tongue 0.3s infinite;
+  }
+  @keyframes tongue {
+    50% {
+      transform: rotate(45deg) translatey(2.5px);
+    }
+  }
+  
